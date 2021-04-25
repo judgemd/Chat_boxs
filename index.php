@@ -1,3 +1,5 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,17 +21,6 @@
             </div>
             <div class="contacts">
                 <ul>
-                        <li>
-                            <a href = "#">
-                            <img src = "images/ashraf.JPG">
-                            <div class="contact">
-                                <div class="name">Ashraf Mammadov</div>
-                                <div class="message">Salam, Bu bir test mesajidir...</div>
-                            </div>
-                            <div class="notification"></div>
-                        </a>
-                        </li>
-                    </a>
                         <li class="active">
                             <a href = "#">
                             <img src = "images/ashraf.JPG">
