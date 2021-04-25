@@ -52,7 +52,11 @@
                 </div>
             </div>
             <div class="message-content">
-                <?php include('./chatOOP.php'); ?>
+                <?php
+                for ($i=0; $i < 14; $i = $i++) {
+                  include('./chatOOP.php');
+                }
+                 ?>
             </div>
             <div class="message-form">
                 <ul>
