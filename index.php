@@ -52,7 +52,7 @@
                 </div>
             </div>
             <div class="message-content">
-                <?php include('./chatOOP');?>
+                <?php include('./chatOOP.php'); ?>
             </div>
             <div class="message-form">
                 <ul>
