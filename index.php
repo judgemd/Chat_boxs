@@ -53,8 +53,12 @@
             </div>
             <div class="message-content">
                 <?php
-                for ($i=0; $i < 14; $i = $i++) {
+                for ($i=0; $i < 13; $i++) {
+                  if($i %2 == 0) {
                   include('./chatOOP.php');
+                } else {
+                  include('./chatOOP2.php');
+                }
                 }
                  ?>
             </div>
