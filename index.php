@@ -37,7 +37,7 @@
                     <img src = "images/ashraf.JPG">
                     <div class="user">
                         <div class="name">Ashraf Mammadov</div>
-                        <div class="time">10 dk once</div>
+                        <div class="time">10 minutes ago</div>
                     </div>
                 </div>
                 <div class="actions">
@@ -68,7 +68,7 @@
                         <a href = "#"><i class = "fa fa-laugh"></i></a>
                     </li>
                     <li class="input">
-                        <input type = "text" placeholder="Bir seyler yaz..">
+                        <input type = "text" placeholder="Please Type Something...">
                     </li>
                     <li class = "micr">
                         <a href="#"><i class = "fa fa-microphone"></i></a>
