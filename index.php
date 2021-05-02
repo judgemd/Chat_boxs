@@ -1,87 +1,62 @@
-<?php session_start(); ?>
-
+<?php
+include('system/connection.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <script src="https://kit.fontawesome.com/cca197e807.js" crossorigin="anonymous"></script>
-</head>
-<body>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="template/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  </head>
+  <body>
+      <input type="checkbox" id="show">
+      <label for="show" class="show-btn" onclick="show()">Welcome</label>
 
-    <div class="chat">
+      <!-- Container 2-->
+      <div class="container2" id="containerid2">
+        <label for="show" class="close-btn2 fas fa-times" title="close" onclick="closebtn()"></label>
+        <div class="text2">Register Form</div>
+      <form action="system/register.php" method="POST">
+    <div class="data2">
+            <label>Nickname</label>
+            <input type="text" name="nickname" required>
+    </div>
+    <div class="data2">
+            <label>Password</label>
+            <input type="password" name="password" required>
+    </div>
+    <div class="btn2">
+        <div class="inner2"></div>
+        <button type="submit">Register</button>
+    </div>
+    </form>
+  </div>
 
-        <div class="sidebar">
-            <div class="search">
-                <input type = "text" placeholder="Ara..">
-                <i class="fas fa-search"></i>
-            </div>
-            <div class="contacts">
-                <ul>
-                  <?php
-                  for ($i=0; $i < 18; $i++) {
-                    include('./textOOP.php');
-                  }
-                  ?>
-                </ul>
-            </div>
-        </div>
-
-        <div class="content">
-
-            <div class="message-header">
-                <div class="user-info">
-                    <img src = "images/ashraf.JPG">
-                    <div class="user">
-                        <div class="name">Ashraf Mammadov</div>
-                        <div class="time">10 minutes ago</div>
-                    </div>
-                </div>
-                <div class="actions">
-                    <ul>
-                        <li>
-                            <a href = "#"><i class="fa fa-info-circle"></i></a>
-                        </li>
-                        <li>
-                            <a href = "#"><i class="fa fa-ellipsis-v"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="message-content">
-                <?php
-                for ($i=0; $i < 13; $i++) {
-                  if($i %2 == 0) {
-                  include('./chatOOP.php');
-                } else {
-                  include('./chatOOP2.php');
-                }
-                }
-                 ?>
-            </div>
-            <div class="message-form">
-                <ul>
-                    <li class = "emoji">
-                        <a href = "#"><i class = "fa fa-laugh"></i></a>
-                    </li>
-                    <li class="input">
-                        <input type = "text" placeholder="Please Type Something...">
-                    </li>
-                    <li class = "micr">
-                        <a href="#"><i class = "fa fa-microphone"></i></a>
-                    </li>
-                    <li class = "image">
-                        <a href="#"><i class = "fa fa-image"></i></a>
-                    </li>
-                </ul>
-            </div>
-
-        </div>
-
+  <!-- Container 1-->
+      <div class="container" id='containerid'>
+        <label for="show" class="close-btn fas fa-times" title="close" onclick="closebtn()"></label>
+        <div class="text">Login Form</div>
+      <form action="system/login.php" method="post">
+          <div class="data">
+            <label>Nickname</label>
+            <input type="text" name='nickname' required>
+          </div>
+    <div class="data">
+            <label>Password</label>
+            <input type="password" name='password' required>
+    </div>
+    <div class="forgot-pass">
+        <a href="#">Forgot Password?</a>
+    </div>
+    <div class="btn">
+        <div class="inner"></div>
+        <button type="submit">login</button>
+    </div>
+    <div class="signup-link">Not a member?<a onclick="register()" id="reg">Register</a></div>
+    </form>
     </div>
 
-</body>
-</html>
+    </div>
+    <script src="template/index.js"></script>
+
+  </body>
