@@ -98,7 +98,7 @@ body {
     height: 40px;
     border-radius: 40px;
     margin-right: 10px;
-}   
+}
 .chat .sidebar .contacts ul li a .contact .name {
     font-size: 15px;
     color: #333;
@@ -242,7 +242,7 @@ body {
     text-align: right;
 }
 
-.chat .content .message-form ul li a {
+.chat .content .message-form ul li a, button {
     width: 36px;
     height: 36px;
     color: #fff;
@@ -251,6 +251,7 @@ body {
     border-radius: 50%;
     line-height: 36px;
     text-align: center;
+    cursor: pointer;
 }
 
 .chat .content .message-form ul li.emoji a {
@@ -261,6 +262,7 @@ body {
     background-color: #ff5722;
 }
 
-.chat .content .message-form ul li.image a {
+.chat .content .message-form ul li.telegram button {
     background-color: #4caf50;
+    font-size: 20px;
 }

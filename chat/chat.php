@@ -67,13 +67,15 @@
                         <a href = "#"><i class = "fa fa-laugh"></i></a>
                     </li>
                     <li class="input">
+                      <form action="dsfsdf" id="login">
                         <input type = "text" placeholder="Please Type Something...">
+                      </form>
                     </li>
                     <li class = "micr">
                         <a href="#"><i class = "fa fa-microphone"></i></a>
                     </li>
-                    <li class = "image">
-                        <a href="#"><i class = "fa fa-image"></i></a>
+                    <li class = "telegram">
+                        <button form="login"><i class="fab fa-telegram-plane"></i></button>
                     </li>
                 </ul>
             </div>
