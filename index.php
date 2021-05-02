@@ -1,4 +1,6 @@
-<?php session_start();?>
+<?php session_start();
+include('system/connection.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -14,14 +16,14 @@
       <div class="container2" id="containerid2">
         <label for="show" class="close-btn2 fas fa-times" title="close" onclick="closebtn()"></label>
         <div class="text2">Register Form</div>
-      <form action="#">
+      <form action="system/register.php" method="POST">
     <div class="data2">
-            <label>Nick Name</label>
-            <input type="text" required>
+            <label>Nickname</label>
+            <input type="text" name="nickname" required>
     </div>
     <div class="data2">
             <label>Password</label>
-            <input type="password" required>
+            <input type="password" name="password" required>
     </div>
     <div class="btn2">
         <div class="inner2"></div>
