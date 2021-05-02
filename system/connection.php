@@ -1,5 +1,5 @@
 <?php
-
+session_start();
 $servername = "localhost";
 $database = "chat";
 $username = "root";

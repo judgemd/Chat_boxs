@@ -1,4 +1,4 @@
-<?php session_start();
+<?php
 include('system/connection.php');
 ?>
 <!DOCTYPE html>
@@ -36,14 +36,14 @@ include('system/connection.php');
       <div class="container" id='containerid'>
         <label for="show" class="close-btn fas fa-times" title="close" onclick="closebtn()"></label>
         <div class="text">Login Form</div>
-      <form action="#">
+      <form action="system/login.php" method="post">
           <div class="data">
-            <label>Nick Name</label>
-            <input type="text" required>
+            <label>Nickname</label>
+            <input type="text" name='nickname' required>
           </div>
     <div class="data">
             <label>Password</label>
-            <input type="password" required>
+            <input type="password" name='password' required>
     </div>
     <div class="forgot-pass">
         <a href="#">Forgot Password?</a>
