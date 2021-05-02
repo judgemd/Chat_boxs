@@ -1,3 +1,4 @@
+<?php session_start();?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,7 +8,7 @@
   </head>
   <body>
       <input type="checkbox" id="show">
-      <label for="show" class="show-btn">Welcome</label>
+      <label for="show" class="show-btn" onclick="show()">Welcome</label>
 
       <!-- Container 2-->
       <div class="container2" id="containerid2">
@@ -24,14 +25,14 @@
     </div>
     <div class="btn2">
         <div class="inner2"></div>
-        <button type="submit">login</button>
+        <button type="submit">Register</button>
     </div>
     </form>
   </div>
 
   <!-- Container 1-->
       <div class="container" id='containerid'>
-        <label for="show" class="close-btn fas fa-times" title="close"></label>
+        <label for="show" class="close-btn fas fa-times" title="close" onclick="closebtn()"></label>
         <div class="text">Login Form</div>
       <form action="#">
           <div class="data">
