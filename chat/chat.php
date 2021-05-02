@@ -65,8 +65,20 @@ if(isset($_POST['sendmessage'])) {
                 </div>
             </div>
             <div class="message-content">
-                <?php
-                 ?>
+
+              <div class="message">
+                  <div class="bubble">Hi, What's up?</div>
+                  <div class="time">1 minute ago from</div>
+              </div>
+
+
+<!--                <?php
+                $messagesinput = $conn->query("SELECT username, text, senddate FROM messages");
+
+                while($output = $messagesinput->fetch_array()) {
+
+                }
+                 ?> -->
             </div>
             <div class="message-form">
                 <ul>
