@@ -1,4 +1,12 @@
-<?php session_start(); ?>
+<?php include('../system/connection.php');
+if(isset($_POST['sendmessage'])) {
+  $text = $_POST["text"];
+  $username = $_SESSION["username"];
+
+  mysqli_query($conn, "INSERT INTO messages(username, text) VALUES('$text','$username')");
+  }
+
+ ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -57,9 +65,20 @@
                 </div>
             </div>
             <div class="message-content">
-                <?php
 
-                 ?>
+              <div class="message">
+                  <div class="bubble">Hi, What's up?</div>
+                  <div class="time">1 minute ago from</div>
+              </div>
+
+
+<!--                <?php
+                $messagesinput = $conn->query("SELECT username, text, senddate FROM messages");
+
+                while($output = $messagesinput->fetch_array()) {
+
+                }
+                 ?> -->
             </div>
             <div class="message-form">
                 <ul>
@@ -67,15 +86,15 @@
                         <a href = "#"><i class = "fa fa-laugh"></i></a>
                     </li>
                     <li class="input">
-                      <form action="dsfsdf" id="login">
-                        <input type = "text" placeholder="Please Type Something...">
+                      <form action="" method="post" id="login">
+                        <input type = "text" name="text" placeholder="Please Type Something...">
                       </form>
                     </li>
                     <li class = "micr">
                         <a href="#"><i class = "fa fa-microphone"></i></a>
                     </li>
                     <li class = "telegram">
-                        <button form="login"><i class="fab fa-telegram-plane"></i></button>
+                        <button name="sendmessage" form="login"><i class="fab fa-telegram-plane"></i></button>
                     </li>
                 </ul>
             </div>
