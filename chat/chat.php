@@ -21,11 +21,16 @@
             </div>
             <div class="contacts">
                 <ul>
-                  <?php
-                  for ($i=0; $i < 18; $i++) {
-                    include('./textOOP.php');
-                  }
-                  ?>
+                  <li>
+                      <a href = "#">
+                      <img src = "../images/ashraf.JPG">
+                      <div class="contact">
+                          <div class="name">Global Chat</div>
+                          <div class="message">Hi, This is a test message</div>
+                      </div>
+                      <div class="notification"></div>
+                  </a>
+                  </li>
                 </ul>
             </div>
         </div>
@@ -34,10 +39,10 @@
 
             <div class="message-header">
                 <div class="user-info">
-                    <img src = "images/ashraf.JPG">
+                    <img src = "../images/ashraf.JPG">
                     <div class="user">
-                        <div class="name">Ashraf Mammadov</div>
-                        <div class="time">10 minutes ago</div>
+                        <div class="name">Global Chat</div>
+                        <div class="time">X minute ago</div>
                     </div>
                 </div>
                 <div class="actions">
@@ -53,13 +58,7 @@
             </div>
             <div class="message-content">
                 <?php
-                for ($i=0; $i < 13; $i++) {
-                  if($i %2 == 0) {
-                  include('./chatOOP.php');
-                } else {
-                  include('./chatOOP2.php');
-                }
-                }
+
                  ?>
             </div>
             <div class="message-form">
