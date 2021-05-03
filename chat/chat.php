@@ -65,6 +65,11 @@
              </div>
              <div class="message-content">
 
+               <?php
+
+
+               ?>
+<!--
                <div class="message">
                    <div class="user_name">judgemd</div>
                    <div class="bubble">Hi, What's up?</div>
@@ -74,7 +79,7 @@
                    <div class="bubble">Hi, What's up?</div>
                    <div class="time">1 minute ago</div>
                </div>
-
+             -->
              </div>
              <div class="message-form">
                  <ul>
@@ -82,7 +87,7 @@
                          <a href = "#"><i class = "fa fa-laugh"></i></a>
                      </li>
                      <li class="input">
-                       <form action="" method="post" id="login">
+                       <form action="../system/connection.php" method="post" id="login">
                          <input type = "text" name="text" placeholder="Please Type Something...">
                        </form>
                      </li>
