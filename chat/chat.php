@@ -1,12 +1,6 @@
-<!--<?php //include('../system/connection.php');
-//if(isset($_POST['sendmessage'])) {
-//  $text = $_POST["text"];
-//  $username = $_SESSION["username"];
-//
-//  mysqli_query($conn, "INSERT INTO messages(username, text) VALUES('$text','$username')");
-//  }
+<?php include('../system/connection.php');?>
 
- ?> -->
+ ?>
  <!DOCTYPE html>
  <html lang="en">
  <head>
@@ -103,6 +97,35 @@
          </div>
 
      </div>
+    <?php
 
- </body>
- </html>
+            //    while($output = $messagesinput->fetch_array()) {
+
+            //    }
+                 ?>
+   </div>
+            <div class="message-form">
+                <ul>
+                    <li class = "emoji">
+                        <a href = "#"><i class = "fa fa-laugh"></i></a>
+                    </li>
+                    <li class="input">
+                      <form action="../system/chatmessage.php" method="post" id="send">
+                        <input type = "text" name="text" placeholder="Please Type Something...">
+                      </form>
+                    </li>
+                    <li class = "micr">
+                        <a href="#"><i class = "fa fa-microphone"></i></a>
+                    </li>
+                    <li class = "telegram">
+                        <button name="sendmessage" form="send"><i class="fab fa-telegram-plane"></i></button>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
