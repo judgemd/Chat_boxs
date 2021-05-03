@@ -1,6 +1,4 @@
 <?php include('../system/connection.php');?>
-
- ?>
  <!DOCTYPE html>
  <html lang="en">
  <head>
