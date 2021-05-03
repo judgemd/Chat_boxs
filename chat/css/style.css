@@ -219,6 +219,12 @@ body {
     margin: 0 8px;
 }
 
+.chat .content .message-content .message .user_name {
+    font-size: 14px;
+    color: #FF00FF;
+    margin: 0 0 4px 10px;
+}
+
 .chat .content .message-content .message {
     align-self: flex-start;
     margin: 0 8px 20px;
