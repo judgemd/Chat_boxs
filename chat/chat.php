@@ -78,7 +78,7 @@
                         <a href = "#"><i class = "fa fa-laugh"></i></a>
                     </li>
                     <li class="input">
-                      <form action="" method="post" id="login">
+                      <form action="../system/chatmessage.php" method="post" id="send">
                         <input type = "text" name="text" placeholder="Please Type Something...">
                       </form>
                     </li>
@@ -86,7 +86,7 @@
                         <a href="#"><i class = "fa fa-microphone"></i></a>
                     </li>
                     <li class = "telegram">
-                        <button name="sendmessage" form="login"><i class="fab fa-telegram-plane"></i></button>
+                        <button name="sendmessage" form="send"><i class="fab fa-telegram-plane"></i></button>
                     </li>
                 </ul>
             </div>
