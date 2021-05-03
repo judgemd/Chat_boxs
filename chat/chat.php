@@ -61,7 +61,7 @@
 
 
                ?>
-<!--
+
                <div class="message">
                    <div class="user_name">judgemd</div>
                    <div class="bubble">Hi, What's up?</div>
@@ -71,7 +71,7 @@
                    <div class="bubble">Hi, What's up?</div>
                    <div class="time">1 minute ago</div>
                </div>
-             -->
+
              </div>
              <div class="message-form">
                  <ul>
@@ -102,26 +102,7 @@
             //    }
                  ?>
    </div>
-            <div class="message-form">
-                <ul>
-                    <li class = "emoji">
-                        <a href = "#"><i class = "fa fa-laugh"></i></a>
-                    </li>
-                    <li class="input">
-                      <form action="../system/chatmessage.php" method="post" id="send">
-                        <input type = "text" name="text" placeholder="Please Type Something...">
-                      </form>
-                    </li>
-                    <li class = "micr">
-                        <a href="#"><i class = "fa fa-microphone"></i></a>
-                    </li>
-                    <li class = "telegram">
-                        <button name="sendmessage" form="send"><i class="fab fa-telegram-plane"></i></button>
-                    </li>
-                </ul>
-            </div>
 
-        </div>
 
     </div>
 
