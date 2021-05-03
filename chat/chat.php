@@ -1,12 +1,4 @@
-<!--<?php //include('../system/connection.php');
-//if(isset($_POST['sendmessage'])) {
-//  $text = $_POST["text"];
-//  $username = $_SESSION["username"];
-//
-//  mysqli_query($conn, "INSERT INTO messages(username, text) VALUES('$text','$username')");
-  }
-
- ?> -->
+<?php include('../system/connection.php');?>
 
 <!DOCTYPE html>
 <html lang="en">
