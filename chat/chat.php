@@ -83,7 +83,7 @@
                          <a href = "#"><i class = "fa fa-laugh"></i></a>
                      </li>
                      <li class="input">
-                       <form action="../system/connection.php" method="post" id="send">
+                       <form action="../system/chatmessage.php" method="post" id="send">
                          <input type = "text" name="text" placeholder="Please Type Something...">
                        </form>
                      </li>
