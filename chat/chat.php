@@ -61,21 +61,35 @@
                $database = mysqli_query($conn, "select * from messages");
                while($insert = mysqli_fetch_array($database)) {
                  $memberrow = mysqli_fetch_array(mysqli_query($conn, "select * from messages where id='$insert[id]'"));
-                 echo $insert['text'];
+
+                  if(
+                    $insert["username"] == $_SESSION["username"]
+                  ) {
+                    $message = "message me";
+                    $user_name = "";
+                  } else {
+                    $message = "message";
+                    $user_name = $insert["username"];
+                  }
+
+
+                 echo
+                  "<div class='". $message . "'>" .
+                  "<div class='user_name'>". $user_name . "</div>" .
+                  "<div class='bubble'>" . $insert["text"] . "</div>" .
+                  "<div class='time'>test</div>" .
+                  "</div>";
+                 //echo $insert['text'];
                }
 
                ?>
-<!--
-               <div class="message">
+
+            <!--   <div class="message">
                    <div class="user_name">judgemd</div>
                    <div class="bubble">Hi, What's up?</div>
                    <div class="time">1 minute ago</div>
                </div>
-               <div class="message me">
-                   <div class="bubble">Hi, What's up?</div>
-                   <div class="time">1 minute ago</div>
-               </div>
--->
+              -->
              </div>
              <div class="message-form">
                  <ul>
