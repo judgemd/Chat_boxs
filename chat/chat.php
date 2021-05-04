@@ -60,8 +60,8 @@
                <?php
                $database = mysqli_query($conn, "select * from messages");
                while($insert = mysqli_fetch_array($database)) {
-                 $members = mysqli_fetch_array(mysql_query("select * from messages where id'$insert[userid]'"));
-
+                 $memberrow = mysqli_fetch_array(mysqli_query($conn, "select * from messages where id='$insert[id]'"));
+                 echo $insert['text'];
                }
 
                ?>
