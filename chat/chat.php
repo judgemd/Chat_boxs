@@ -58,10 +58,14 @@
              <div class="message-content">
 
                <?php
+               $database = mysqli_query($conn, "select * from messages");
+               while($insert = mysqli_fetch_array($database)) {
+                 $members = mysqli_fetch_array(mysql_query("select * from messages where id'$insert[userid]'"));
 
+               }
 
                ?>
-
+<!--
                <div class="message">
                    <div class="user_name">judgemd</div>
                    <div class="bubble">Hi, What's up?</div>
@@ -71,7 +75,7 @@
                    <div class="bubble">Hi, What's up?</div>
                    <div class="time">1 minute ago</div>
                </div>
-
+-->
              </div>
              <div class="message-form">
                  <ul>
